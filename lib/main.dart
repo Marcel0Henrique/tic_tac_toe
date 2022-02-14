@@ -179,7 +179,7 @@ class _HomePageState extends State<HomePage> {
               title: Text(
                 winner != 2 ? 'Vitória' : 'Empate',
                 style: TextStyle(
-                  fontSize: 32,
+                  fontSize: 50,
                   fontWeight: FontWeight.bold,
                   color: winner != 2 ? Colors.yellow[800] : Colors.black,
                 ),
@@ -192,7 +192,7 @@ class _HomePageState extends State<HomePage> {
                         : 'O'
                     : '#',
                 style: TextStyle(
-                  fontSize: 110,
+                  fontSize: 150,
                   fontWeight: FontWeight.bold,
                   color: winner != 2
                       ? winner == 0
@@ -210,7 +210,7 @@ class _HomePageState extends State<HomePage> {
                             ? Colors.red[700]
                             : Colors.blue[800]
                         : Colors.black,
-                    fixedSize: const Size(200, 40),
+                    fixedSize: const Size(300, 60),
                   ),
                   onPressed: () {
                     restartGame();
@@ -219,7 +219,7 @@ class _HomePageState extends State<HomePage> {
                   child: const Text(
                     'Tente Novamente',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
@@ -235,27 +235,28 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: const Color.fromARGB(255, 0, 70, 136),
       body: Column(
         //mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Padding(
-            padding: EdgeInsets.fromLTRB(0, 25, 0, 10),
+            padding: EdgeInsets.fromLTRB(0, 80, 0, 10),
             child: Text(
               'Tic Tac Toe',
               style: TextStyle(
-                fontSize: 35,
+                fontSize: 50,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(0, 0, 0, 30),
+            padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
                   'Vez do Jogador:  ',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 22,
                     fontWeight: FontWeight.w500,
                     color: Colors.white,
                   ),
@@ -263,7 +264,7 @@ class _HomePageState extends State<HomePage> {
                 Text(
                   player == 0 ? 'X' : 'O',
                   style: TextStyle(
-                    fontSize: 26,
+                    fontSize: 32,
                     fontWeight: FontWeight.bold,
                     color: player == 0 ? Colors.red : Colors.blue,
                   ),
@@ -274,7 +275,7 @@ class _HomePageState extends State<HomePage> {
 
           //* Linha 1
           Padding(
-            padding: const EdgeInsets.fromLTRB(30, 30, 30, 0),
+            padding: const EdgeInsets.fromLTRB(30, 100, 30, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -288,7 +289,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
@@ -314,7 +315,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
@@ -340,7 +341,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
@@ -375,7 +376,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
@@ -401,7 +402,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
@@ -427,7 +428,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
@@ -462,7 +463,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
@@ -488,7 +489,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
@@ -514,7 +515,7 @@ class _HomePageState extends State<HomePage> {
                               ? Colors.red[800]
                               : Colors.blue[800]
                           : Colors.white,
-                      fixedSize: const Size(80, 80),
+                      fixedSize: const Size(100, 100),
                       primary: Colors.black,
                     ),
                     onPressed: () {
