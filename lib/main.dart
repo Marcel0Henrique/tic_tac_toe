@@ -243,11 +243,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 0, 70, 136),
       body: Column(
-        //mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Padding(
-            padding: EdgeInsets.fromLTRB(0, 80, 0, 10),
+            padding: EdgeInsets.fromLTRB(0, 30, 0, 10),
             child: Text(
               'Tic Tac Toe',
               style: TextStyle(
@@ -284,7 +283,7 @@ class _HomePageState extends State<HomePage> {
 
           //* Linha 1
           Padding(
-            padding: const EdgeInsets.fromLTRB(30, 100, 30, 0),
+            padding: const EdgeInsets.fromLTRB(5, 30, 5, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
