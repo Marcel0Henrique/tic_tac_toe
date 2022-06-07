@@ -2,16 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
-  FlutterNativeSplash.removeAfter(initialization);
   // runApp will run, but not be shown until initialization completes:
   runApp(const MyApp());
 }
 
-void initialization(BuildContext context) async {
-  // This is where you can initialize the resources needed by your app while
-  // the splash screen is displayed.  After this function completes, the
-  // splash screen will be removed.
-}
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -370,7 +365,7 @@ class _HomePageState extends State<HomePage> {
 
           //* Linha 2
           Padding(
-            padding: const EdgeInsets.fromLTRB(30, 5, 30, 0),
+            padding: const EdgeInsets.fromLTRB(5, 5, 5, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -457,7 +452,7 @@ class _HomePageState extends State<HomePage> {
 
           //* Linha 2
           Padding(
-            padding: const EdgeInsets.fromLTRB(30, 5, 30, 0),
+            padding: const EdgeInsets.fromLTRB(5, 5, 5, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
